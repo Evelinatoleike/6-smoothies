@@ -1,3 +1,28 @@
 @import './base/reset.css';
 @import './components/button.css';
 @import './components/font-awesome.min.css';
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    background-color: pink;
+}
+
+h1 {
+    width: 500px;
+    background-color: purple;
+}
+
+@media (min-width: 480px) {
+    .container {
+        width: 360px;
+    }
+}
